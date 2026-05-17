@@ -11,8 +11,7 @@ def main():
     if validate_event(event):
         print(process_event(event))
     else:
-        print("MAIN BRANCH ERROR")
-
+        print("FEATURE BRANCH ERROR")
 
 if __name__ == "__main__":
     main()

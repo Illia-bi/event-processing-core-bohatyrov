@@ -1,13 +1,18 @@
 from validator import validate_event
 
 
-def process_event(event_name):
+def process_event(event_name: str) -> str:
     return f"Processing event: {event_name}"
 
 
-event = input("Enter event name: ")
+def main():
+    event = input("Enter event name: ")
 
-if validate_event(event):
-    print(process_event(event))
-else:
-    print("Invalid event")
+    if validate_event(event):
+        print(process_event(event))
+    else:
+        print("Invalid event")
+
+
+if __name__ == "__main__":
+    main()

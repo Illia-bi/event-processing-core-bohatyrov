@@ -2,7 +2,7 @@ from validator import validate_event
 
 
 def process_event(event_name: str) -> str:
-    return f"Processing event: {event_name}"
+    return f"Wrong event: {event_name}"
 
 
 def main():

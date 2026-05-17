@@ -16,7 +16,7 @@ jobs:
       - name: Run unit tests
         run: |
           echo "Running unit tests..."
-          echo "All tests passed!"
+          exit 1
 
   build:
     runs-on: ubuntu-latest

@@ -11,7 +11,7 @@ def main():
     if validate_event(event):
         print(process_event(event))
     else:
-        print("ERROR: Invalid event")
+        print("ERROR! Invalid event")
 
 
 if __name__ == "__main__":

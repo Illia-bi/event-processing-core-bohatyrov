@@ -60,7 +60,7 @@ jobs:
       - name: Run smoke tests
         run: |
           echo "Running smoke tests..."
-          test 1 -eq 1
+          test 1 -eq 2
 
   deploy_production:
     runs-on: ubuntu-latest

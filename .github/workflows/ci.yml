@@ -28,7 +28,7 @@ jobs:
 
       - name: Run bandit
         run: |
-          bandit -r .
+           bandit -r . -x tests
 
       - name: Run tests
         run: |

@@ -1,17 +1,10 @@
-from validator import validate_event
-
-
-def process_event(event_name: str) -> str:
-    return f"Processing event: {event_name}"
+def process_event(event: str) -> str:
+    return f"event: {event}"
 
 
 def main():
-    event = input("Enter event name: ")
-
-    if validate_event(event):
-        print(process_event(event))
-    else:
-        print("FEATURE BRANCH ERROR")
+    event = input("event: ")
+    print(process_event(event))
 
 
 if __name__ == "__main__":
